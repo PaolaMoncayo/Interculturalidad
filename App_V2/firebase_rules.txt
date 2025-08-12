@@ -1,0 +1,117 @@
+// Reglas de Firebase Firestore
+// Copia estas reglas en Firebase Console -> Firestore Database -> Rules
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Permitir lectura pública de puntos de interés
+    match /points_of_interest/{document=**} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+    
+    // Permitir lectura pública de trivias
+    match /trivias/{document=**} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+    
+    // Reglas para usuarios autenticados
+    match /{document=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
+
+// DATOS DE EJEMPLO PARA FIRESTORE - UNIVERSIDAD ESPE
+// Crea una colección llamada "points_of_interest" con estos documentos:
+
+1. Documento ID: "entrada_principal"
+{
+  "title": "Entrada Principal ESPE",
+  "description": "Acceso principal al campus universitario",
+  "category": "entrada",
+  "latitude": -0.3137,
+  "longitude": -78.4425
+}
+
+2. Documento ID: "bloque_c_espe"
+{
+  "title": "Bloque C - ESPE",
+  "description": "Edificio académico principal",
+  "category": "aula",
+  "latitude": -0.3142,
+  "longitude": -78.4420
+}
+
+3. Documento ID: "laboratorios_computacion"
+{
+  "title": "Laboratorios de Computación ESPE",
+  "description": "Laboratorios de sistemas y programación",
+  "category": "laboratorio",
+  "latitude": -0.3140,
+  "longitude": -78.4418
+}
+
+4. Documento ID: "departamento_ciencias"
+{
+  "title": "Departamento de Ciencias de la Energía",
+  "description": "Facultad de Ciencias de la Energía",
+  "category": "administracion",
+  "latitude": -0.3145,
+  "longitude": -78.4422
+}
+
+5. Documento ID: "biblioteca_espe"
+{
+  "title": "Biblioteca ESPE",
+  "description": "Biblioteca central de la universidad",
+  "category": "biblioteca",
+  "latitude": -0.3143,
+  "longitude": -78.4424
+}
+
+6. Documento ID: "gimnasio_espe"
+{
+  "title": "Gimnasio ESPE",
+  "description": "Instalaciones deportivas y gimnasio",
+  "category": "default",
+  "latitude": -0.3148,
+  "longitude": -78.4415
+}
+
+7. Documento ID: "coliseo_general"
+{
+  "title": "Coliseo General Miguel Iturralde",
+  "description": "Instalaciones deportivas y eventos",
+  "category": "default",
+  "latitude": -0.3155,
+  "longitude": -78.4430
+}
+
+8. Documento ID: "centro_investigaciones"
+{
+  "title": "Centro de Investigaciones ESPE",
+  "description": "Centro de investigación y desarrollo",
+  "category": "laboratorio",
+  "latitude": -0.3152,
+  "longitude": -78.4438
+}
+
+9. Documento ID: "estacionamiento_principal"
+{
+  "title": "Estacionamiento Principal",
+  "description": "Área de parqueadero principal",
+  "category": "estacionamiento",
+  "latitude": -0.3135,
+  "longitude": -78.4428
+}
+
+10. Documento ID: "cafeteria_espe"
+{
+  "title": "Cafetería ESPE",
+  "description": "Comedor y cafetería universitaria",
+  "category": "cafeteria",
+  "latitude": -0.3144,
+  "longitude": -78.4421
+}

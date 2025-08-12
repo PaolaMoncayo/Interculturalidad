@@ -1,0 +1,219 @@
+{
+  "@@locale": "es",
+  "appTitle": "Universidad ESPE",
+  "@appTitle": {
+    "description": "Título de la aplicación"
+  },
+  "welcome": "Bienvenido",
+  "@welcome": {
+    "description": "Mensaje de bienvenida"
+  },
+  "hello": "¡Hola, {email}!",
+  "@hello": {
+    "description": "Saludo personalizado",
+    "placeholders": {
+      "email": {
+        "type": "String",
+        "example": "usuario@ejemplo.com"
+      }
+    }
+  },
+  "login": "Iniciar Sesión",
+  "@login": {
+    "description": "Botón de login"
+  },
+  "register": "Registrarse",
+  "@register": {
+    "description": "Botón de registro"
+  },
+  "email": "Correo Electrónico",
+  "@email": {
+    "description": "Campo de email"
+  },
+  "password": "Contraseña",
+  "@password": {
+    "description": "Campo de contraseña"
+  },
+  "logout": "Cerrar Sesión",
+  "@logout": {
+    "description": "Botón de logout"
+  },
+  "sessionClosed": "Sesión cerrada",
+  "@sessionClosed": {
+    "description": "Mensaje de sesión cerrada"
+  },
+  "interactiveMap": "Mapa Interactivo",
+  "@interactiveMap": {
+    "description": "Título del mapa"
+  },
+  "nearbyPlaces": "Lugares Cercanos",
+  "@nearbyPlaces": {
+    "description": "Lugares cercanos"
+  },
+  "qrScanner": "Lectura de QR",
+  "@qrScanner": {
+    "description": "Escáner QR"
+  },
+  "others": "Otros",
+  "@others": {
+    "description": "Otros elementos"
+  },
+  "universityLocations": "Ubicaciones Universidad",
+  "@universityLocations": {
+    "description": "Título de ubicaciones"
+  },
+  "loading": "Cargando...",
+  "@loading": {
+    "description": "Mensaje de carga"
+  },
+  "loadingLocations": "Cargando ubicaciones...",
+  "@loadingLocations": {
+    "description": "Cargando ubicaciones"
+  },
+  "yourLocation": "Tu ubicación:",
+  "@yourLocation": {
+    "description": "Tu ubicación actual"
+  },
+  "locationUnavailable": "Ubicación no disponible",
+  "@locationUnavailable": {
+    "description": "Ubicación no disponible"
+  },
+  "pointsOfInterestFound": "Puntos de interés encontrados: {count}",
+  "@pointsOfInterestFound": {
+    "description": "Número de puntos encontrados",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "5"
+      }
+    }
+  },
+  "noPointsFound": "No se encontraron puntos de interés",
+  "@noPointsFound": {
+    "description": "No hay puntos de interés"
+  },
+  "addPointsFirestore": "Agrega algunos en Firebase Firestore",
+  "@addPointsFirestore": {
+    "description": "Instrucción para agregar puntos"
+  },
+  "viewList": "Ver lista",
+  "@viewList": {
+    "description": "Ver en formato lista"
+  },
+  "viewMap": "Ver mapa",
+  "@viewMap": {
+    "description": "Ver en formato mapa"
+  },
+  "changeView": "Cambiar vista: {viewType}",
+  "@changeView": {
+    "description": "Cambiar tipo de vista del mapa",
+    "placeholders": {
+      "viewType": {
+        "type": "String",
+        "example": "Satélite"
+      }
+    }
+  },
+  "mapNormal": "Normal",
+  "@mapNormal": {
+    "description": "Vista normal del mapa"
+  },
+  "mapSatellite": "Satélite",
+  "@mapSatellite": {
+    "description": "Vista satélite"
+  },
+  "mapTerrain": "Terreno",
+  "@mapTerrain": {
+    "description": "Vista de terreno"
+  },
+  "mapHybrid": "Híbrido",
+  "@mapHybrid": {
+    "description": "Vista híbrida"
+  },
+  "mapUnavailable": "Mapa no disponible",
+  "@mapUnavailable": {
+    "description": "Mapa no disponible"
+  },
+  "googleMapsError": "Google Maps no se pudo cargar",
+  "@googleMapsError": {
+    "description": "Error de Google Maps"
+  },
+  "universityLocation": "Ubicación Central Universidad",
+  "@universityLocation": {
+    "description": "Ubicación central"
+  },
+  "close": "Cerrar",
+  "@close": {
+    "description": "Botón cerrar"
+  },
+  "legend": "Leyenda - Categorías",
+  "@legend": {
+    "description": "Leyenda de categorías"
+  },
+  "classrooms": "Aulas",
+  "@classrooms": {
+    "description": "Aulas de clase"
+  },
+  "library": "Biblioteca",
+  "@library": {
+    "description": "Biblioteca"
+  },
+  "laboratories": "Laboratorios",
+  "@laboratories": {
+    "description": "Laboratorios"
+  },
+  "cafeteria": "Cafetería",
+  "@cafeteria": {
+    "description": "Cafetería"
+  },
+  "bathrooms": "Baños",
+  "@bathrooms": {
+    "description": "Baños"
+  },
+  "administration": "Administración",
+  "@administration": {
+    "description": "Administración"
+  },
+  "entrances": "Entradas",
+  "@entrances": {
+    "description": "Entradas"
+  },
+  "parking": "Estacionamiento",
+  "@parking": {
+    "description": "Estacionamiento"
+  },
+  "general": "General",
+  "@general": {
+    "description": "Categoría general"
+  },
+  "description": "Descripción:",
+  "@description": {
+    "description": "Etiqueta descripción"
+  },
+  "category": "Categoría:",
+  "@category": {
+    "description": "Etiqueta categoría"
+  },
+  "coordinates": "Coordenadas:",
+  "@coordinates": {
+    "description": "Etiqueta coordenadas"
+  },
+  "distance": "Distancia:",
+  "@distance": {
+    "description": "Etiqueta distancia"
+  },
+  "meters": "metros",
+  "@meters": {
+    "description": "Unidad metros"
+  },
+  "functionality": "Funcionalidad \"{feature}\" aún no disponible",
+  "@functionality": {
+    "description": "Mensaje de funcionalidad no disponible",
+    "placeholders": {
+      "feature": {
+        "type": "String",
+        "example": "Lugares Cercanos"
+      }
+    }
+  }
+}
